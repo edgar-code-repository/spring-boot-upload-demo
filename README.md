@@ -1,13 +1,30 @@
 UPLOAD DEMO
 -----------------------------------------------------------------------------------------------------
 
-A JSON file is received and processed in a Rest API.
+**A JSON file is received and processed in a Rest API.**
 
 ![java+json](images/json+java.png)
 
 -----------------------------------------------------------------------------------------------------
 
-** Endpoint that receives the file: **
+**The file contains this data:**
+
+```
+
+[
+  { "id": 1, "name": "Alice", "email": "alice@example.com" },
+  { "id": 2, "name": "Bob", "email": "bob@example.com" },
+  { "id": 3, "name": "Charlie", "email": "charlie@example.com" },
+  ...
+  ...
+  ...
+]
+
+```
+
+-----------------------------------------------------------------------------------------------------
+
+**Endpoint that receives the file:**
 
 ```
     @PostMapping
@@ -21,7 +38,7 @@ A JSON file is received and processed in a Rest API.
 
 -----------------------------------------------------------------------------------------------------
 
-** Method that handles the JSON file: **
+**Method that handles the JSON file:**
 
 ```
     @Override
@@ -44,5 +61,11 @@ A JSON file is received and processed in a Rest API.
         return responseDTO;
     }
 ```
+
+-----------------------------------------------------------------------------------------------------
+
+**The endpoint is executed using Postman:**
+
+![postman](screenshots/postman.png)
 
 -----------------------------------------------------------------------------------------------------
