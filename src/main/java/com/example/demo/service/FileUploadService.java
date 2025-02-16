@@ -7,4 +7,6 @@ public interface FileUploadService {
 
     ResponseUploadDTO uploadClientsFile(MultipartFile file);
 
+    boolean cleanClients();
+
 }
