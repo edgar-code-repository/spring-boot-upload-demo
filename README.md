@@ -5,6 +5,10 @@ UPLOAD DEMO
 
 ![java+json](images/json+java.png)
 
+**Each row in the file is stored in Azure SQL.**
+
+![azuresql](images/azure-sql.png)
+
 -----------------------------------------------------------------------------------------------------
 
 **The file contains this data:**
